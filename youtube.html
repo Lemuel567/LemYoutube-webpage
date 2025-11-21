@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemuel Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+
+        /* Grid container for videos */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr)); /* 3 columns, min 200px */
+            gap: 20px;
+            max-width: 1200px; /* total grid width */
+            margin: 0 auto; /* center grid horizontally */
+        }
+
+        /* Video card */
+        .video-card {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Main video image */
+        .video-card img.main-image {
+            width: 100%;
+            height: 180px; /* uniform height */
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.4s;
+        }
+
+        .video-card img.main-image:hover {
+            opacity: 0.7;
+        }
+
+        /* Info row */
+        .video-info {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .video-info img.profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .video-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-title {
+            font-weight: bold;
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        .video-views {
+            font-size: 0.85em;
+            margin-top: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button.subscribe {
+            padding: 3px 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-card img.main-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <img class="main-image" src="hcs/hqdefault.jpg" alt="Tye Tribbett">
+            <div class="video-info">
+                <img class="profile" src="hcs/channels4_profile.jpg" alt="Profile">
+                <div class="video-text">
+                    <p class="video-title">Tye Tribbett: Only one God</p>
+                    <p class="video-views">3.4M views <button class="subscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img class="main-image" src="hcs/hq720.avif" alt="Kwadwo Sheldon">
+            <div class="video-info">
+                <img class="profile" src="hcs/kss.jpg" alt="Profile">
+                <div class="video-text">
+                    <p class="video-title">Kwadwo Sheldon: Yawa of the Day</p>
+                    <p class="video-views">72k views <button class="subscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img class="main-image" src="hcs/hq720 (1).avif" alt="Kofas media">
+            <div class="video-info">
+                <img class="profile" src="hcs/cc.jpg" alt="Profile">
+                <div class="video-text">
+                    <p class="video-title">Kofas media: Acabenezer the Uber Driver</p>
+                    <p class="video-views">102k views <button class="subscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img class="main-image" src="hcs/hj.jpg" alt="Akesse Brempong">
+            <div class="video-info">
+                <img class="profile" src="hcs/hj.jpg" alt="Profile">
+                <div class="video-text">
+                    <p class="video-title">Akesse Brempong: Spontaneous Worship 1</p>
+                    <p class="video-views">30M views <button class="subscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img class="main-image" src="hcs/ti.jpg" alt="Geofrey Golden">
+            <div class="video-info">
+                <img class="profile" src="hcs/ti.jpg" alt="Profile">
+                <div class="video-text">
+                    <p class="video-title">Geofrey Golden: Glory to the Lamb</p>
+                    <p class="video-views">2M views <button class="subscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img class="main-image" src="hcs/cg.jpg" alt="Christabel">
+            <div class="video-info">
+                <img class="profile" src="hcs/cg.jpg" alt="Profile">
+                <div class="video-text">
+                    <p class="video-title">Christabel: Computer Science Day Celebration</p>
+                    <p class="video-views">34M views <button class="subscribe">Subscribe</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

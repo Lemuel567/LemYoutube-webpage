@@ -1,0 +1,189 @@
+
+
+.pc{
+        margin-bottom: 0px;
+    }
+    .para{
+        font-weight: bold;
+        margin-bottom: 0PX;
+
+    }
+    .him{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .her{
+        margin: 0px;
+    }
+    
+     .name{
+        background-color: darkgreen;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: rgb(192, 187, 187);
+     }
+
+    .parent{
+        display: flex;
+        margin-bottom: 40px;
+        background-color: purple;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+    }
+    .bb{
+        background-color: rgb(49, 30, 30);
+    }
+    .shape{
+        background-color: rgb(16, 155, 37);
+        width: 110px ;
+        height: 40px;
+        display: flex;               
+        justify-content: center;   
+        align-items: center;
+        margin-right: 40px;
+        margin-bottom: 0px;
+        transition: 0.5s;
+        border-radius: 30px;
+        
+    }
+    .request{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    width: 100px;
+    font-weight: 5px;
+    transition: 0.5s;
+    box-shadow: 10px 5px 10px rgb(85, 231, 32);
+
+    }
+
+    .ashape{
+        height: 40px;
+        width: 130px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-right: 40px;
+        
+    }
+    .amazon{
+        height: 25px;
+        width : 100px;
+        background-color: black;
+        border-radius: 15px;
+        font-weight: 5px;
+        color: white;
+        cursor: pointer;
+        transition: opacity 0.4s;
+        box-shadow: 10px 5px 10px red;
+    }
+    .gshape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(237, 16, 16);
+        height: 40px;
+        width: 100px;
+    }
+    .git{
+        background-color: black;
+        color: white;
+        font-weight: 5px;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 10px 5px 10px blue;
+        transition: opacity 0.6s;
+    }
+
+
+    .mparent{
+        display: flex;
+        background-color: black;
+        border-radius: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boot{
+        display: flex;
+        background-color: rgb(108, 56, 56);
+        height: 40;
+        margin-right: 50px;
+        width: 250;
+        justify-content: center;
+        align-items: center;
+    }
+    .start{
+        color: white;
+        background-color: purple;
+        margin-right: 4px ;
+        width: 100;
+        cursor: pointer;
+        height: 30;
+        border-radius: 29px;
+
+    }
+    .down{
+        height: 30;
+        width: 100;
+        color: white;
+        background-color: green;
+        cursor: pointer;
+    }
+    .last{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 40px;
+        background-color: darkviolet;
+
+    }
+    .app{
+        margin-right: 4px;
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(218, 228, 21);
+        cursor: pointer; 
+    }
+    .sst{
+       width: 100px;
+        height: 30px;
+        border-radius: 30px;
+        color: white;
+        background-color: rgb(11, 92, 158);
+        cursor: pointer; 
+    }
+    .request:hover{
+        background-color: rgb(16, 155, 37);
+    }
+    .shape:hover{
+        background-color: white;
+    }
+    .shape:active{
+        background-color: red;
+    }
+    .amazon:hover{
+        opacity: 0.8;
+
+    }
+    .amazon:active{
+        opacity: 0.3;
+    }
+    .git:hover{
+        opacity: 0.8;
+       
+    }
+    .git:active{
+        opacity: 0.3;
+    }
+    
